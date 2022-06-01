@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+body {
+    border: 2px solid #F90E0D;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(160, 160, 160);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text {
+    font-family: 'Libre Caslon Display';
+    font-size: 18px;
+    font-weight: bold;
+    color: #F90E0D;
+}
+
+.header {
+    background-color: #F90E0D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 300px;
+
+}
+
+.header .text {
+    color: white;
+}
+
+.logo {
+    font-size: 40px;
+    font-family: 'Lucida Calligraphy';
+    font-weight: normal;
+}
+
+.topContent {
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 300px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+    height: 340px;
+    width: 500px;
+    gap: 5px;
+}
+
+.subtext {
+    font-size: 20px;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    border: 3px solid #F90E0D;
+}
+
+.button {
+    color: white;
+    background-color:#F90E0D;
+    border-radius: 10px;
+    padding: 5px 30px;
+    border: 2px solid #F90E0D;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.trackList {
+    display: flex;
+    padding: 15px 400px;
+    background-color: #F90E0D;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tracks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.track {
+    border: 2px dotted white;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    padding: 10px
+}
+
+.trackList .text {
+    color: white;
+    font-size: 36px;
+}
+
+.tracks .text {
+    font-size: 20px;
+}
