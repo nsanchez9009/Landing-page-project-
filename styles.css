@@ -30,6 +30,7 @@ a {
     font-size: 18px;
     font-weight: bold;
     color: #F90E0D;
+    letter-spacing: 1px;
 }
 
 .header {
@@ -37,7 +38,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 300px;
+    padding: 5px 18vw;
 
 }
 
@@ -56,7 +57,7 @@ a {
     flex: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 300px;
+    padding: 100px 18vw;
 }
 
 .left {
@@ -68,6 +69,10 @@ a {
     height: 340px;
     width: 500px;
     gap: 5px;
+}
+
+.title {
+    padding-right: 30px;
 }
 
 .subtext {
@@ -95,7 +100,7 @@ a {
 
 .trackList {
     display: flex;
-    padding: 15px 400px;
+    padding: 15px 18vw;
     background-color: #F90E0D;
     flex-direction: column;
     align-items: center;
@@ -105,28 +110,34 @@ a {
 .tracks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .track {
     display: flex;
-    background-color: white;
+    background-image: url(./media/flower.gif);
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
     border-radius: 10px;
 }
 
 .trackList .text {
     color: white;
     font-size: 36px;
+    letter-spacing: 8px;
 }
 
 .tracks .text {
     font-size: 20px;
-    color:#F90E0D;
+    color:black;
+    letter-spacing: .5px;
 }
