@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 
 body {
-    border: 2px solid #F90E0D;
+    border: 3px solid #F90E0D;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-color: rgb(160, 160, 160);
+}
+
+.video {
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
 }
 
 ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-shrink: 0;
     gap: 15px;
 }
 
@@ -47,6 +53,7 @@ a {
 }
 
 .logo {
+    flex-shrink: 0;
     font-size: 40px;
     font-family: 'Lucida Calligraphy';
     font-weight: normal;
@@ -100,10 +107,11 @@ a {
 
 .trackList {
     display: flex;
-    padding: 15px 18vw;
+    margin: 15px 18vw;
     background-color: #F90E0D;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     gap: 20px;
 }
 
@@ -124,10 +132,11 @@ a {
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     padding: 20px;
     border-radius: 10px;
+    line-height: 35px;
 }
 
 .trackList .text {
@@ -136,8 +145,37 @@ a {
     letter-spacing: 8px;
 }
 
-.tracks .text {
-    font-size: 20px;
-    color:black;
+.whiteText {
+    display: inline;
+    font-size: 25px;
+    color:#F90E0D;
     letter-spacing: .5px;
+    background-color: white;
 }
+
+.quoteSection {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 18vw;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    font-style: italic;
+    gap: 40px
+}
+
+.quote {
+    display: inline;
+    font-size: 36px;
+    background-color: white;
+    line-height: 60px;
+}
+
+.person {
+    display: inline;
+    font-size: 30px;
+    font-style: none;
+    margin-right: 100px;
+    padding: 2px;
+    background-color: white;
+}
+
