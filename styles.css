@@ -2,16 +2,20 @@
 
 body {
     border: 3px solid #F90E0D;
+    background-color: #F90E0D;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    gap: 0;
 }
 
 .video {
-    position: absolute;
+    position: fixed;
     height: 100vh;
+    width: 100vw;
     z-index: -1;
+    
 }
 
 ul {
@@ -61,7 +65,6 @@ a {
 
 .topContent {
     display: flex;
-    flex: auto;
     justify-content: space-between;
     align-items: center;
     padding: 100px 18vw;
@@ -107,12 +110,11 @@ a {
 
 .trackList {
     display: flex;
-    margin: 15px 18vw;
-    background-color: #F90E0D;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    margin: 70px 18vw;
     gap: 20px;
+    z-index: 2;
 }
 
 .tracks {
@@ -140,7 +142,7 @@ a {
 }
 
 .trackList .text {
-    color: white;
+    color: #F90E0D;
     font-size: 36px;
     letter-spacing: 8px;
 }
@@ -154,19 +156,21 @@ a {
 }
 
 .quoteSection {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 100px 18vw;
+    padding: 70px 18vw;
     flex-wrap: wrap-reverse;
+    justify-content: center;
     align-items: flex-start;
     font-style: italic;
-    gap: 40px
+    gap: 40px;
+    z-index: 2;
 }
 
 .quote {
     display: inline;
     font-size: 36px;
-    background-color: white;
     line-height: 60px;
 }
 
@@ -179,3 +183,41 @@ a {
     background-color: white;
 }
 
+.other {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 18vw;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #F90E0D;
+}
+
+.other .text{
+    color: white;
+    font-size: 30px;
+}
+
+.other .subtext {
+    font-size: 15px;
+}
+
+.other .button {
+    background-color: #F90E0D;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F90E0D;
+    padding: 25px;
+}
+
+.footer .text {
+    color: white;
+    font-size: 15px;
+}
