@@ -105,16 +105,20 @@ a {
 .tracks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .track {
-    border: 2px dotted white;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 100px;
-    height: auto;
-    padding: 10px
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .trackList .text {
@@ -124,4 +128,5 @@ a {
 
 .tracks .text {
     font-size: 20px;
+    color:#F90E0D;
 }
